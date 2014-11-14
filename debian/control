@@ -1,0 +1,12 @@
+Source: advert-block-antix
+Section: system
+Priority: optional
+Maintainer: anticapitalista <antiX@operamail.com>
+Build-Depends: debhelper (>= 9.20120115)
+Standards-Version: 3.9.4
+Homepage: http://antix.mepis.org
+
+Package: advert-block-antix
+Architecture: all
+Depends: wget, ktsuss 
+Description: Script and Desktop launcher for advert block, website add blocker for antiX. 

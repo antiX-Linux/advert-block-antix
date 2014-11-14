@@ -1,0 +1,79 @@
+advert-block-antix (0.2.4) unstable; urgency=low
+ 
+  * Removed technobeta entry
+  * Added unblock/restore original hosts file option
+  * Removed gtkdialog dependency
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 19 Oct 2014 18:45:00 +0200
+
+
+advert-block-antix (0.2.3) unstable; urgency=low
+ 
+  * Using dpkg-buildpackage.
+  * xz compression for debs.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 18 Oct 2013 19:20:00 +0200
+
+
+advert-block-antix (0.2.2) unstable; urgency=low
+ 
+  * Added more localisations.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 09 Apr 2012 16:20:00 +0200
+
+
+advert-block-antix (0.2.1) unstable; urgency=low
+ 
+  * Added localisations.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 27 January 2012 20:55:00 +0200
+
+
+advert-block-antix (0.2.0) unstable; urgency=low
+ 
+  * ktsuss replaces gksu.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 23 September 2012 15:40:00 +0200
+
+
+advert-block-antix (0.1.5.1) unstable; urgency=low
+ 
+  * Fixed ownership bug.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 26 August 2012 15:40:00 +0200
+
+
+advert-block-antix (0.1.5) unstable; urgency=low 
+ 
+  * Added copyright notice.
+
+ -- anticapitalista <antiX@operamail.com> Mon, 16 July 2012 15:30:00 +0200
+
+
+advert-block-antix (0.1.4) unstable; urgency=low 
+ 
+  * Edited .desktop entry for /bin/bash.
+
+ -- anticapitalista <antiX@operamail.com>  Tues, 10 July 2012 18:30:00 +0200
+
+
+advert-block-antix (0.1.3) unstable; urgency=low 
+ 
+  * Added .desktop entry.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 30 May 2012 15:30:00 +0200
+
+
+advert-block-antix (0.1.2) unstable; urgency=low 
+ 
+  * Added localisation.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 25 April 2012 15:30:00 +0200
+
+
+advert-block-antix (0.1.1) unstable; urgency=low 
+ 
+  * Initial Release.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 29 January 2012 15:30:00 +0200
+
