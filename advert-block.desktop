@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=advert-block
-Exec=ktsuss block-advert.sh
+Exec=gksu block-advert.sh
 Icon=advert-block
 Terminal=false
 Type=Application

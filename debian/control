@@ -8,5 +8,5 @@ Homepage: http://antix.mepis.org
 
 Package: advert-block-antix
 Architecture: all
-Depends: wget, ktsuss 
+Depends: wget, gksu 
 Description: Script and Desktop launcher for advert block, website add blocker for antiX. 
