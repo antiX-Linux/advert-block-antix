@@ -1,3 +1,10 @@
+advert-block-antix (0.2.6) unstable; urgency=low
+ 
+  * Added Italian, Japanese, Swedish
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 26 Jun 2015 15:06:00 +0200
+
+
 advert-block-antix (0.2.5) unstable; urgency=low
  
   * Removed ktsuss dependency
