@@ -1,34 +1,4 @@
 #!/usr/bin/make -f
-
-build:
-
-build-arch:
-
-build-indep:
-
-clean:
-	dh_testdir
-	dh_testroot
-	dh_clean
-
-install:
-	dh_install block-advert.sh /usr/local/bin
-	dh_testdir
-	dh_testroot
-
-binary-arch:
-
-binary-indep: install
-	dh_testdir
-	dh_testroot
-	#dh_installchangelogs
-	dh_installdocs
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb -- -Z xz
-
-binary: binary-indep binary-arch
-
-.PHONY: clean install binary-arch binary-indep binary
+%:
+	dh $@
+override_dh_usrlocal:

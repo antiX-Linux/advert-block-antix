@@ -1,3 +1,17 @@
+advert-block-antix (0.2.7.1) unstable; urgency=low
+ 
+  * Revert back to 2.6 version
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 04 Dec 2015 13:19:00 +0200
+
+
+advert-block-antix (0.2.7) unstable; urgency=low
+ 
+  * Add only show in xfce for MX users
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 30 Nov 2015 14:23:00 +0200
+
+
 advert-block-antix (0.2.6) unstable; urgency=low
  
   * Added Italian, Japanese, Swedish

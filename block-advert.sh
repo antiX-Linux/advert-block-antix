@@ -134,9 +134,19 @@ function download_adlist
         wget_dialog http://sysctl.org/cameleon/hosts /tmp/adlist2
     fi
 
+    # someonewhocares
+    if [ "$someonewhocares" = true ]; then
+        wget_dialog http://someonewhocares.org/hosts/hosts /tmp/adlist3
+    fi
+
     # yoyo
     if [ "$yoyo" = true ]; then
         wget_dialog 'http://pgl.yoyo.org/as/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext' /tmp/adlist4
+    fi
+     
+    # adservers
+    if [ "$adservers" = true ]; then
+        wget_dialog http://hosts-file.net/ad_servers.asp /tmp/adlist5
     fi
 
     # UNBLOCK
@@ -146,7 +156,7 @@ function download_adlist
     fi
 
     #100830 BK bug fix: create if not exist...
-    touch /tmp/adlist{1,2,3,4} 
+    touch /tmp/adlist{1,2,3,4,5} 
 }
 
 
@@ -178,7 +188,9 @@ ans=$(yad --title "$title" \
              --checklist  --column "Pick" --column "Service"\
              FALSE "mvps.org" \
              FALSE "sysctl.org" \
+             FALSE "someonewhocares.org" \
              FALSE "yoyo.org" \
+             FALSE "ad_servers" \
              FALSE "UNBLOCK" )
 
 #echo $ans
@@ -199,7 +211,15 @@ do
         sysctl='true'
         selected='yes'
         ;;
+    someonewhocares.org)
+        sysctl='true'
+        selected='yes'
+        ;;
     yoyo.org)
+        yoyo='true'
+        selected='yes'
+        ;;
+    ad_servers.org)
         yoyo='true'
         selected='yes'
         ;;
