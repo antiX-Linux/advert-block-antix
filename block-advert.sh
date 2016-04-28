@@ -129,24 +129,19 @@ function download_adlist
     sed -i 's/0.0.0.0/127.0.0.1/' /tmp/adlist1 # TP fix to change 0.0.0.0 to 127.0.0.1 in mvps list
     sed -i 's/ #.*$//' /tmp/adlist1 # TP fix to remove comments in mvps list
 
-    # systcl
-    if [ "$sysctl" = true ]; then
-        wget_dialog http://sysctl.org/cameleon/hosts /tmp/adlist2
-    fi
-
     # someonewhocares
     if [ "$someonewhocares" = true ]; then
-        wget_dialog http://someonewhocares.org/hosts/hosts /tmp/adlist3
+        wget_dialog http://someonewhocares.org/hosts/hosts /tmp/adlist2
     fi
 
     # yoyo
     if [ "$yoyo" = true ]; then
-        wget_dialog 'http://pgl.yoyo.org/as/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext' /tmp/adlist4
+        wget_dialog 'http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext' /tmp/adlist3
     fi
      
     # adservers
     if [ "$adservers" = true ]; then
-        wget_dialog http://hosts-file.net/ad_servers.asp /tmp/adlist5
+        wget_dialog http://hosts-file.net/ad_servers.asp /tmp/adlist4
     fi
 
     # UNBLOCK
@@ -156,7 +151,7 @@ function download_adlist
     fi
 
     #100830 BK bug fix: create if not exist...
-    touch /tmp/adlist{1,2,3,4,5} 
+    touch /tmp/adlist{1,2,3,4} 
 }
 
 
@@ -187,10 +182,9 @@ ans=$(yad --title "$title" \
              --text $"Choose your preferred ad blocking service(s)" \
              --checklist  --column "Pick" --column "Service"\
              FALSE "mvps.org" \
-             FALSE "sysctl.org" \
              FALSE "someonewhocares.org" \
              FALSE "yoyo.org" \
-             FALSE "ad_servers" \
+             FALSE "adservers.org" \
              FALSE "UNBLOCK" )
 
 #echo $ans
@@ -207,20 +201,16 @@ do
         mvps='true'
         selected='yes'
         ;;
-    sysctl.org)
-        sysctl='true'
-        selected='yes'
-        ;;
     someonewhocares.org)
-        sysctl='true'
+        someonewhocares='true'
         selected='yes'
         ;;
     yoyo.org)
         yoyo='true'
         selected='yes'
         ;;
-    ad_servers.org)
-        yoyo='true'
+    adservers.org)
+        adservers='true'
         selected='yes'
         ;;
     UNBLOCK)
