@@ -1,7 +1,7 @@
 Source: advert-block-antix
 Section: system
 Priority: optional
-Maintainer: anticapitalista <antiX@operamail.com>
+Maintainer: anticapitalista <antix@operamail.com>
 Build-Depends: debhelper (>= 9.20120115)
 Standards-Version: 3.9.4
 Homepage: https://github.com/antiX-Linux/advert-block-antix
