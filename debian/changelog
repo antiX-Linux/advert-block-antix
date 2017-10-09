@@ -1,3 +1,9 @@
+advert-block-antix (0.2.11) unstable; urgency=medium
+
+  * Include in Applications menu
+
+ -- anticapitalista <antix@operamail.com>  Sat, 07 Oct 2017 14:44:22 +0300
+
 advert-block-antix (0.2.10) unstable; urgency=medium
 
   * Updated and new translations 
