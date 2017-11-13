@@ -1,7 +1,25 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Advert Block
+Name=advert-block
+Name[ca]=Bloqueja anuncis
+Name[de]=advert-block Werbeblocker
+Name[el]=advert-block
+Name[es]=Bloquea anuncios
+Name[fr]=Stop pubs
+Name[it]=Blocca pubblicità
+Name[nl]=advertentie-blokkeerder
+Name[pt]=Bloquear anúncios
+Name[sv]=annons-blockerare
 Comment=Block adverts via /etc/hosts file
+Comment[ca]=Bloqueja anuncis amb el fitxer /etc/hosts
+Comment[de]=Werbung über etc/hosts-Datei blockieren
+Comment[el]=Αποκλεισμός διαφημίσεις μέσω αρχείο /etc/hosts
+Comment[es]=Bloqueo de anuncios via el /etc/hosts
+Comment[fr]=Bloque les publicités via le fichier /etc/hosts
+Comment[it]=Blocca la pubblicità mediante il file /etc/hosts
+Comment[nl]=blokkeer advertenties middels /etc/hosts bestand
+Comment[pt]=Bloquear anúncios através do ficheiro /etc/hosts
+Comment[sv]=Blockera annonser via /etc/hosts fil
 Exec=gksu block-advert.sh
 Icon=advert-block
 Terminal=false
